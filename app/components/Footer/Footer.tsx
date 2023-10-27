@@ -21,10 +21,11 @@ const Footer = () => {
           className="flex flex-col items-center justify-between gap-y-5 text-sm md:flex-row"
         >
           <p>&copy; 2023 AN-MAR Parapety</p>
+          <p>Parapety Olsztyn - Okna Olsztyn</p>
           <p className="text-center">
-            Strona zaprojektowana i wykonana przez{' '}
+            Wykonanie:{' '}
             <a
-              className="border-b-2 border-b-primary-500/0 font-medium text-primary-400 outline-none focus-visible:border-b-primary-500/100"
+              className="border-b-primary-500/0 text-primary-400 focus-visible:border-b-primary-500/100 border-b-2 font-medium outline-none"
               href="mailto:oz.robert@o2.pl"
             >
               oz.robert@o2.pl
