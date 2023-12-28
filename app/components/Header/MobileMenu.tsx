@@ -46,6 +46,14 @@ const MobileMenu = () => {
                 Opinie
               </Popover.Button>
             </li>
+            <li>
+              <Popover.Button
+                as={TextLink}
+                href="/kalkulator"
+              >
+                Kalkulator
+              </Popover.Button>
+            </li>
           </ul>
           <MobileContactMenu />
         </div>

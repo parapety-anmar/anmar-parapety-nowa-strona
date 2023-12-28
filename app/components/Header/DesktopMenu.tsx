@@ -16,10 +16,11 @@ const DesktopMenu = () => {
       <li>
         <TextLink href="/#opinie">Opinie</TextLink>
       </li>
+      <li>
+        <TextLink href="/kalkulator">Kalkulator</TextLink>
+      </li>
       <li className="ml-4">
-        <ButtonLink href="/#formularz-kontaktowy">
-          Skontaktuj się z nami
-        </ButtonLink>
+        <ButtonLink href="/#formularz-kontaktowy">Skontaktuj się z nami</ButtonLink>
       </li>
     </ul>
   )
