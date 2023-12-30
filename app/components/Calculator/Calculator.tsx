@@ -57,7 +57,7 @@ const AreaCalculator = () => {
               Usuń pozycję
             </button>
             <label className="flex w-full items-center gap-2 text-sm font-normal lg:w-auto">
-              Długość (m²)
+              Długość (metry)
               <input
                 type="number"
                 name="length"
@@ -67,7 +67,7 @@ const AreaCalculator = () => {
               />
             </label>
             <label className="flex w-full items-center gap-2 text-sm font-normal lg:w-auto">
-              Szerokość (m²)
+              Szerokość (metry)
               <input
                 type="number"
                 name="width"
