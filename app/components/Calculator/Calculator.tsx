@@ -57,7 +57,7 @@ const AreaCalculator = () => {
               Usuń pozycję
             </button>
             <label className="flex w-full items-center gap-2 text-sm font-normal lg:w-auto">
-              Długość
+              Długość (m²)
               <input
                 type="number"
                 name="length"
@@ -67,7 +67,7 @@ const AreaCalculator = () => {
               />
             </label>
             <label className="flex w-full items-center gap-2 text-sm font-normal lg:w-auto">
-              Szerokość
+              Szerokość (m²)
               <input
                 type="number"
                 name="width"
@@ -79,7 +79,7 @@ const AreaCalculator = () => {
             <p className="text-sm">
               Częściowa powierzchnia:{' '}
               <span className="text-base font-semibold">
-                {Number(field.length) * Number(field.width)} m²
+                {(Number(field.length) * Number(field.width)).toFixed(2)} m²
               </span>
             </p>
             <button
@@ -109,10 +109,12 @@ const AreaCalculator = () => {
         </div>
         <div className="mt-6 space-y-2">
           <p>
-            Całkowita powierzchnia: <span className="text-base font-semibold">{totalArea} m²</span>
+            Całkowita powierzchnia:{' '}
+            <span className="text-base font-semibold">{totalArea.toFixed(2)} m²</span>
           </p>
           <p>
-            Całkowita cena: <span className="text-base font-semibold">{totalPrice}zł</span>
+            Całkowita cena:{' '}
+            <span className="text-base font-semibold">{totalPrice.toFixed(2)}zł</span>
           </p>
         </div>
       </div>
