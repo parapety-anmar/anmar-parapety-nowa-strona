@@ -1,22 +1,23 @@
-import Header from 'components/Header/Header'
-import 'globals.css'
-import { Metadata } from 'next'
-import { Poppins } from 'next/font/google'
-import { ReactNode } from 'react'
+import { GoogleAnalytics } from "@next/third-parties/google";
+import Header from "components/Header/Header";
+import "globals.css";
+import { Metadata } from "next";
+import { Poppins } from "next/font/google";
+import { ReactNode } from "react";
 
 const font = Poppins({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-})
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
 
 export const metadata: Metadata = {
-  title: 'AN-MAR Parapety',
+  title: "AN-MAR Parapety",
   description:
-    'Zapraszamy do odkrycia bogatej oferty parapetów AN-MAR - wiodącego producenta i sprzedawcy parapetów zewnętrznych, parapetów wewnętrznych oraz okien.',
-}
+    "Zapraszamy do odkrycia bogatej oferty parapetów AN-MAR - wiodącego producenta i sprzedawcy parapetów zewnętrznych, parapetów wewnętrznych oraz okien.",
+};
 
 interface RootLayoutProps {
-  children: ReactNode
+  children: ReactNode;
 }
 
 const RootLayout = ({ children }: RootLayoutProps) => {
@@ -27,8 +28,9 @@ const RootLayout = ({ children }: RootLayoutProps) => {
         <Header />
         {children}
       </body>
+      <GoogleAnalytics gaId="G-BDF45VZ6S1" />
     </html>
-  )
-}
+  );
+};
 
-export default RootLayout
+export default RootLayout;
