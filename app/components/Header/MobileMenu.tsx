@@ -1,7 +1,7 @@
-import { Popover } from '@headlessui/react'
-import CloseMobileMenuButton from './CloseMobileMenuButton'
-import MobileContactMenu from './MobileContactMenu'
-import TextLink from './TextLink'
+import { Popover } from "@headlessui/react";
+import CloseMobileMenuButton from "./CloseMobileMenuButton";
+import MobileContactMenu from "./MobileContactMenu";
+import TextLink from "./TextLink";
 
 const MobileMenu = () => {
   return (
@@ -15,42 +15,32 @@ const MobileMenu = () => {
           </div>
           <ul className="flex flex-col gap-1 p-5">
             <li>
-              <Popover.Button
-                as={TextLink}
-                href="/"
-              >
+              <Popover.Button as={TextLink} href="/">
                 Strona główna
               </Popover.Button>
             </li>
             <li>
-              <Popover.Button
-                as={TextLink}
-                href="/o-nas"
-              >
+              <Popover.Button as={TextLink} href="/o-nas">
                 O nas
               </Popover.Button>
             </li>
             <li>
-              <Popover.Button
-                as={TextLink}
-                href="/parapety"
-              >
+              <Popover.Button as={TextLink} href="/katalogi">
+                Katalogi
+              </Popover.Button>
+            </li>
+            <li>
+              <Popover.Button as={TextLink} href="/parapety">
                 Parapety
               </Popover.Button>
             </li>
             <li>
-              <Popover.Button
-                as={TextLink}
-                href="/#opinie"
-              >
+              <Popover.Button as={TextLink} href="/#opinie">
                 Opinie
               </Popover.Button>
             </li>
             <li>
-              <Popover.Button
-                as={TextLink}
-                href="/kalkulator"
-              >
+              <Popover.Button as={TextLink} href="/kalkulator">
                 Kalkulator
               </Popover.Button>
             </li>
@@ -59,7 +49,7 @@ const MobileMenu = () => {
         </div>
       </Popover.Panel>
     </>
-  )
-}
+  );
+};
 
-export default MobileMenu
+export default MobileMenu;

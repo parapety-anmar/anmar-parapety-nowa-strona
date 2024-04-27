@@ -1,5 +1,5 @@
-import ButtonLink from './ButtonLink'
-import TextLink from './TextLink'
+import ButtonLink from "./ButtonLink";
+import TextLink from "./TextLink";
 
 const DesktopMenu = () => {
   return (
@@ -11,6 +11,9 @@ const DesktopMenu = () => {
         <TextLink href="/o-nas">O nas</TextLink>
       </li>
       <li>
+        <TextLink href="/katalogi">Katalogi</TextLink>
+      </li>
+      <li>
         <TextLink href="/parapety">Parapety</TextLink>
       </li>
       <li>
@@ -20,10 +23,12 @@ const DesktopMenu = () => {
         <TextLink href="/kalkulator">Kalkulator</TextLink>
       </li>
       <li className="ml-4">
-        <ButtonLink href="/#formularz-kontaktowy">Skontaktuj się z nami</ButtonLink>
+        <ButtonLink href="/#formularz-kontaktowy">
+          Skontaktuj się z nami
+        </ButtonLink>
       </li>
     </ul>
-  )
-}
+  );
+};
 
-export default DesktopMenu
+export default DesktopMenu;

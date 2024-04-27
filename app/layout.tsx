@@ -1,5 +1,6 @@
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Header from "components/Header/Header";
+import TemporaryInfo from "components/TemporaryInfo/TemporaryInfo";
 import "globals.css";
 import { Metadata } from "next";
 import { Poppins } from "next/font/google";
@@ -24,7 +25,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
   return (
     <html lang="pl">
       <body className={`${font.className} bg-gray-50 text-gray-800`}>
-        {/* <TemporaryInfo /> */}
+        <TemporaryInfo />
         <Header />
         {children}
       </body>
