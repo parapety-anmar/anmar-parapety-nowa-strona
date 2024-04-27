@@ -1,7 +1,7 @@
-'use client'
+"use client";
 
-import Container from 'components/shared/layout/Container'
-import { motion } from 'framer-motion'
+import Container from "components/shared/layout/Container";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
@@ -23,9 +23,9 @@ const Footer = () => {
           <p>&copy; 2023 AN-MAR Parapety</p>
           <p>Parapety Olsztyn - Okna Olsztyn</p>
           <p className="text-center">
-            Wykonanie:{' '}
+            Wykonanie:{" "}
             <a
-              className="border-b-primary-500/0 text-primary-400 focus-visible:border-b-primary-500/100 border-b-2 font-medium outline-none"
+              className="border-b-2 border-b-primary-500/0 font-medium text-primary-400 outline-none focus-visible:border-b-primary-500/100"
               href="mailto:oz.robert@o2.pl"
             >
               oz.robert@o2.pl
@@ -34,7 +34,7 @@ const Footer = () => {
         </motion.div>
       </Container>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
